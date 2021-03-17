@@ -1,0 +1,323 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ :root {
+    /* Color */
+    --main-bg: #F0F0F0;
+    /* Font__family */
+    --main-font: Arial, Helvetica, sans-serif;
+    /* Font__size */
+    --font-size: calc(2vw + 5px);
+}
+
+html,
+body {
+    font-family: var( --main-font);
+    font-size: var(--font-size);
+    min-height: 100%;
+    background: var(--main-bg);
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+li {
+    font-size: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+}
+
+.logo {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.logo__img img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo__name,
+.logo__contacts {
+    background: #fff;
+}
+
+.logo__contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.logo__contacts a img {
+    width: 48px;
+    margin-right: 10px;
+}
+
+.logo__name h1 {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.logo__name p {
+    text-align: center;
+    /* padding: 10px 0 10px 0; */
+    color: #8b8b8b;
+    font-size: .8em;
+    border-bottom: 1px dotted #000;
+}
+
+.viber__mob {
+    display: none;
+}
+
+.container {
+    width: 75%;
+    font-size: calc(2vw);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header__list {
+    display: flex;
+    text-align: center;
+}
+
+.header__list li {
+    background: #fff;
+    flex-grow: 1;
+    border-right: 5px dotted #f0f0f0;
+    padding: 30px 20px;
+}
+
+.header__list li:last-child {
+    border-right: none;
+}
+
+.header img {
+    width: 42px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-me {
+    font-size: .7em;
+    margin-bottom: 10px;
+}
+
+.about-me h2 {
+    color: #007cc0;
+    background: #fff;
+    padding: 20px;
+    border-bottom: 5px dotted #f0f0f0;
+}
+
+.about-me__box {
+    display: flex;
+}
+
+.about-me__info {
+    width: 40%;
+    background: #fff;
+}
+
+.about-me__skills {
+    width: 60%;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.about-me__skills p {
+    border-bottom: 5px solid #007cc0;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.about-me__skills p:nth-child(1) {
+    width: 100%;
+}
+
+.about-me__skills p:nth-child(2) {
+    width: 90%;
+}
+
+.about-me__skills p:nth-child(3) {
+    width: 50%;
+}
+
+.about-me__skills p:nth-child(4) {
+    width: 80%;
+}
+
+.about-me__skills p:nth-child(5) {
+    width: 50%;
+}
+
+.about-me__skills p:nth-child(6) {
+    width: 60%;
+}
+
+.about-me__skills p:nth-child(7) {
+    width: 75%;
+}
+
+.about-me__skills p:nth-child(8) {
+    width: 60%;
+}
+
+.about-me__skills p:nth-child(9) {
+    width: 55%;
+}
+
+.about-me__info ul>li {
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.about-me__info span {
+    font-weight: normal;
+    color: #8b8b8b;
+}
+
+.portfolio__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio h2 {
+    color: #007cc0;
+    background: #fff;
+    padding: 20px;
+    font-size: .7em;
+    border-bottom: 5px dotted #f0f0f0;
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio__box {
+    width: 32.333%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #8b8b8b;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.portfolio__box.box1 {
+    background: #000;
+    z-index: 999;
+}
+
+.portfolio__box h2 {
+    border-bottom: none;
+    text-align: center;
+    color: #000;
+}
+
+@media(max-width:767px) {
+    .wrapper {
+        padding: 5px 10px 5px 10px;
+        display: block;
+        font-size: calc(2vw + 15px);
+    }
+    .logo {
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .logo__contacts {
+        padding: 10px 5px;
+    }
+    .logo__contacts a img {
+        width: 42px;
+    }
+    .logo__name h1 {
+        padding: 5px 0 5px 0;
+    }
+    .viber__pc {
+        display: none;
+    }
+    .viber__mob {
+        display: inline-block;
+    }
+    .logo {
+        width: 100%;
+    }
+    .logo__img img {
+        display: block;
+        max-width: 100%;
+    }
+    .container {
+        width: 100%;
+        font-size: calc(2vw + 10px);
+    }
+    .header__list li {
+        border-right: 5px dotted #f0f0f0;
+        padding: 10px 0;
+    }
+    .header__list li:last-child {
+        border-right: none;
+    }
+    .header img {
+        width: 35px;
+        display: block;
+        margin: 0 auto;
+    }
+    .about-me {
+        font-size: calc(2vw + 15px);
+    }
+    .about-me h2 {
+        font-size: 1.2em;
+    }
+    .about-me__box {
+        display: block;
+        font-size: .8em;
+    }
+    .about-me__info,
+    .about-me__skills {
+        width: 100%;
+    }
+    .about-me__info {
+        margin-bottom: 10px;
+    }
+    .portfolio h2 {
+        font-size: calc(2vw + 15px);
+    }
+    .portfolio__box {
+        width: 100%;
+        height: 300px;
+    }
+    .portfolio__box h2 {
+        border-bottom: none;
+        text-align: center;
+        color: #000;
+    }
+}
